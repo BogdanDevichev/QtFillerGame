@@ -3,16 +3,15 @@ import QtQuick.Controls 1.4
 import QtQuick.Layouts 1.2
 
 Item {
-    id: item3
     width: 480
     height: 640
 
     ColumnLayout {
         id: columnLayout1
-        anchors.topMargin: 3
-        anchors.bottomMargin: 3
-        anchors.rightMargin: 3
-        anchors.leftMargin: 3
+        anchors.rightMargin: 0
+        anchors.bottomMargin: 0
+        anchors.leftMargin: 0
+        anchors.topMargin: 0
         anchors.fill: parent
 
         Item {
@@ -96,12 +95,15 @@ Item {
                 Layout.fillWidth: true
             }
 
-            Button {
-                id: button1
-                text: qsTr("Button")
-                opacity: 0
+            Item {
+                id: item2
+                x: 307
+                width: 40
+                height: 40
+                clip: false
+                Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
+                Layout.fillHeight: false
                 Layout.fillWidth: true
-                visible: true
             }
 
             Button {
@@ -113,7 +115,6 @@ Item {
                 Layout.fillHeight: false
                 Layout.fillWidth: true
             }
-
 
         }
     }
