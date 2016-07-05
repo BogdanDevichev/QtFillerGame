@@ -1,5 +1,6 @@
 import QtQuick 2.5
 import QtQuick.Controls 1.4
+import QtQuick.Controls.Styles 1.4
 import QtQuick.Layouts 1.2
 
 Item {
@@ -34,65 +35,131 @@ Item {
             clip: false
             spacing: 5
             Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
-
             Button {
                 id: buttonRed
                 width: 40
                 height: 40
-                text: qsTr(" ")
+                text: qsTr("    ")
+                antialiasing: true
                 Layout.fillHeight: false
                 Layout.fillWidth: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
+
+                style: ButtonStyle {
+                    background: Rectangle {
+                        anchors.fill: parent
+                        color: "red"
+                        border {
+                            color: "darkgray"
+                        }
+                    }
+                }
             }
 
             Button {
                 id: buttonWhite
                 width: 40
                 height: 40
-                text: qsTr(" ")
+                text: qsTr("    ")
+                antialiasing: true
+                visible: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
                 Layout.fillHeight: false
                 Layout.fillWidth: true
+
+                style: ButtonStyle {
+                    background: Rectangle {
+                        anchors.fill: parent
+                        color: "red"
+                        border {
+                            color: "darkgray"
+                        }
+                    }
+                }
             }
 
             Button {
                 id: buttonViolet
                 width: 40
                 height: 40
-                text: qsTr(" ")
+                text: qsTr("    ")
+                antialiasing: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
                 Layout.fillHeight: false
                 Layout.fillWidth: true
+
+                style: ButtonStyle {
+                    background: Rectangle {
+                        anchors.fill: parent
+                        color: "red"
+                        border {
+                            color: "darkgray"
+                        }
+                    }
+                }
             }
 
             Button {
                 id: buttonGreen
                 width: 40
                 height: 40
-                text: qsTr(" ")
+                text: qsTr("    ")
+                antialiasing: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
                 Layout.fillHeight: false
                 Layout.fillWidth: true
+
+                style: ButtonStyle {
+                    background: Rectangle {
+                        anchors.fill: parent
+                        color: "red"
+                        border {
+                            color: "darkgray"
+                        }
+                    }
+                }
             }
 
             Button {
                 id: buttonGray
                 width: 40
                 height: 40
-                text: qsTr(" ")
+                text: qsTr("    ")
+                antialiasing: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
                 Layout.fillHeight: false
                 Layout.fillWidth: true
+
+                style: ButtonStyle {
+                    background: Rectangle {
+                        anchors.fill: parent
+                        color: "red"
+                        border {
+                            color: "darkgray"
+                        }
+                    }
+                }
             }
 
             Button {
                 id: buttonOrange
                 width: 40
                 height: 40
-                text: qsTr(" ")
+                text: qsTr("    ")
+                antialiasing: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
                 Layout.fillHeight: false
                 Layout.fillWidth: true
+
+                style: ButtonStyle {
+                    background: Rectangle {
+                        anchors.fill: parent
+                        color: "red"
+                        border {
+                            color: "darkgray"
+                        }
+                    }
+                }
             }
 
             Item {
@@ -111,9 +178,19 @@ Item {
                 width: 40
                 height: 40
                 text: qsTr("Back")
+                antialiasing: true
                 Layout.alignment: Qt.AlignHCenter | Qt.AlignBottom
                 Layout.fillHeight: false
                 Layout.fillWidth: true
+                style: ButtonStyle {
+                    background: Rectangle {
+                        anchors.fill: parent
+                        color: "red"
+                        border {
+                            color: "darkgray"
+                        }
+                    }
+                }
             }
 
         }
