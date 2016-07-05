@@ -23,86 +23,72 @@ Item {
         id: rowLayout1
         y: 566
         height: 66
-        anchors.right: rectangle2.left
-        anchors.rightMargin: 32
+        anchors.right: fButton7.left
+        anchors.rightMargin: 25
         anchors.bottom: parent.bottom
         anchors.bottomMargin: 5
         anchors.left: parent.left
         anchors.leftMargin: 5
 
-        Rectangle {
-            id: rectangle3
+        FButton {
+            id: fButton1
             width: 200
             height: 200
-            color: "#a4565f"
-            radius: 12
+            Layout.fillHeight: true
+            Layout.fillWidth: true
+            buttonColor: "#aa0000"
+            pushed: false
+        }
+
+        FButton {
+            id: fButton2
+            width: 200
+            height: 200
+            buttonColor: "#00aa00"
+            pushed: false
             Layout.fillHeight: true
             Layout.fillWidth: true
         }
 
-        Rectangle {
-            id: rectangle4
+        FButton {
+            id: fButton3
             width: 200
             height: 200
-            color: "#9d7f59"
-            radius: 12
+            pushed: false
             Layout.fillHeight: true
+            buttonColor: "#0000aa"
             Layout.fillWidth: true
         }
 
-        Rectangle {
-            id: rectangle5
+        FButton {
+            id: fButton4
             width: 200
             height: 200
-            color: "#92a365"
-            radius: 12
+            pushed: false
             Layout.fillHeight: true
+            buttonColor: "#00aaaa"
             Layout.fillWidth: true
         }
 
-        Rectangle {
-            id: rectangle6
+        FButton {
+            id: fButton5
             width: 200
             height: 200
-            color: "#5d906e"
-            radius: 12
+            pushed: false
             Layout.fillHeight: true
+            buttonColor: "#aa00aa"
             Layout.fillWidth: true
         }
 
-        Rectangle {
-            id: rectangle7
+        FButton {
+            id: fButton6
             width: 200
             height: 200
-            color: "#6288a6"
-            radius: 12
+            pushed: false
             Layout.fillHeight: true
+            buttonColor: "#aaaa00"
             Layout.fillWidth: true
         }
-
-        Rectangle {
-            id: rectangle8
-            width: 200
-            height: 200
-            color: "#85649b"
-            radius: 12
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-    }
-
-    Rectangle {
-        id: rectangle2
-        x: 375
-        y: 566
-        width: 97
-        height: 66
-        color: "#b0aaaa"
-        radius: 12
-        anchors.right: parent.right
-        anchors.bottom: parent.bottom
-        anchors.rightMargin: 5
-        anchors.bottomMargin: 5
     }
 
     Rectangle {
@@ -120,6 +106,22 @@ Item {
             }
         }
         z: -1
+    }
+
+    FButton {
+        id: fButton7
+        x: 372
+        y: 556
+        width: 75
+        height: 75
+        anchors.bottom: parent.bottom
+        anchors.bottomMargin: 5
+        anchors.right: parent.right
+        anchors.rightMargin: 5
+        pushed: false
+        Layout.fillHeight: true
+        buttonColor: "#aaaaaa"
+        Layout.fillWidth: true
     }
 
 }
